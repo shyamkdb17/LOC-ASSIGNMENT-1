@@ -1,0 +1,95 @@
+// Q1
+#include<stdio.h>
+int main()
+{
+        char n[40],b[40],h[100];
+        int r;
+        printf("\nName:\n");
+        scanf("%s",&n);
+        printf("\nBranch:\n");
+        scanf("%s",&b);
+        printf("\nHobbies:\n");
+        scanf("%s",&h);
+        printf("\nRoll no.:\n");
+        scanf("%d",&r);
+        printf("\nName: %s",n);
+        printf("\nBranch: %s",b);
+        printf("\nHobbies: %s",h);
+        printf("\nRoll no.: %d",r);
+        return 0;
+        
+}
+
+// Q2
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("Please give two numbers:\n");
+    scanf("%d%d",&a,&b);
+    if (a>b)
+    {
+        printf("\nBigger number is %d",a);
+    }
+    else
+    {
+        printf("\nBigger number is %d",b);
+    }
+    return 0;
+}
+
+//Q3
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("Please give a number:\n");
+    scanf("%d",&a);
+    b=a%2;
+    switch (b){
+        case 0 :
+            printf("%d is even",a);
+            break;
+        default:
+            printf("%d is odd",a);
+            break;
+    }
+    return 0;
+
+//Q 4
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("Please give two numbers:\n");
+    scanf("%d%d",&a,&b);
+    switch(4)
+    {
+        case 4:
+            printf("\nAfter adding the two numbers, result is %d",a+b);
+        case 2:
+            printf("\nAfter subtracting second number from the first, result is %d",a-b);
+        case 3:
+            printf("\nAfter multiplying the two numbers, result is %d",a*b);
+        case 1:
+            printf("\nAfter dividing the two numbers, result is %d",a/b);
+    }
+    return 0;
+}
+
+// Q5
+#include<stdio.h>
+int main()
+{
+    float r,d,c,a;
+    printf("Please give the radius: \n");
+    scanf("%f",&r);
+    d=r*2;
+    c=3.14*d;
+    a=3.14*r*r;
+    printf("\nRadius is %f",r);
+    printf("\nDiameter is %f",d);
+    printf("\nCicumference is %f",c);
+    printf("\nArea is %f",a);
+    return 0;
+}
